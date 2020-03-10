@@ -19,15 +19,15 @@ import java.util.Objects;
 public class OfferItem {
 
     // product
-    private String productId;
-
-    private BigDecimal productPrice;
-
-    private String productName;
-
-    private Date productSnapshotDate;
-
-    private String productType;
+//    private String Id;
+//
+//    //private BigDecimal Price;
+//
+//    private String Name;
+//
+//    private Date SnapshotDate;
+//
+//    private String Type;
 
     private int quantity;
 

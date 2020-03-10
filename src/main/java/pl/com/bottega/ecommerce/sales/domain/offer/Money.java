@@ -5,6 +5,11 @@ public class Money {
     private int value;
     private String currency;
 
+    public Money(int value, String currency) {
+        this.value = value;
+        this.currency = currency;
+    }
+
     public void setValue(int value) {
         this.value = value;
     }
@@ -20,7 +25,5 @@ public class Money {
     public int getValue() {
         return value;
     }
-
-
 
 }
