@@ -33,7 +33,7 @@ public class OfferItem {
 
     private BigDecimal totalCost;
 
-    private String currency;
+    //private String currency;
 
     // discount
     private String discountCause;
@@ -90,9 +90,6 @@ public class OfferItem {
         return totalCost;
     }
 
-    public String getTotalCostCurrency() {
-        return currency;
-    }
 
     public BigDecimal getDiscount() {
         return discount;
@@ -108,7 +105,7 @@ public class OfferItem {
 
     @Override
     public int hashCode() {
-        return Objects.hash(currency, discount, discountCause, productId, productName, productPrice, productSnapshotDate, productType,
+        return Objects.hash(/*currency,*/ discount, discountCause, productId, productName, productPrice, productSnapshotDate, productType,
                 quantity, totalCost);
     }
 
@@ -124,8 +121,8 @@ public class OfferItem {
             return false;
         }
         OfferItem other = (OfferItem) obj;
-        return Objects.equals(currency, other.currency)
-               && Objects.equals(discount, other.discount)
+        return /*Objects.equals(currency, other.currency)
+               && */Objects.equals(discount, other.discount)
                && Objects.equals(discountCause, other.discountCause)
                && Objects.equals(productId, other.productId)
                && Objects.equals(productName, other.productName)
