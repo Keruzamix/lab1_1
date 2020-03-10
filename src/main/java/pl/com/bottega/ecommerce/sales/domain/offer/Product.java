@@ -12,14 +12,14 @@ public class Product {
 
     private String type;
 
-    private Money coast;
+    private Money price;
 
-    public Product(String id, String name, Date snapshotDate, String type, Money coast) {
+    public Product(String id, String name, Date snapshotDate, String type, Money price) {
         this.id = id;
         this.name = name;
         this.snapshotDate = snapshotDate;
         this.type = type;
-        this.coast = coast;
+        this.price = price;
     }
 
     public void setId(String id) {
